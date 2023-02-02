@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     :root{
         --brand1: #27AE60;
         --brand2: #93D7AF;
-        --brand3: #EB5757
+        --brand3: #EB5757;
 
         --gray1: #333333;
         --gray2: #828282;

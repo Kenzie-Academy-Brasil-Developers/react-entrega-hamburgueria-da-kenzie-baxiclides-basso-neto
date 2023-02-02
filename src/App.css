@@ -1,0 +1,16 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.loadingMsg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 100vh;
+}
