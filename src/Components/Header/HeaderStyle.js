@@ -8,17 +8,11 @@ export const StyledHeader = styled.header`
   background-color: var(--gray4);
   padding-bottom: 1rem;
 
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-
   div {
+    margin: 0 auto;
+    width: 100%;
     max-width: 1200px;
-  }
+}
 
   h1 {
     text-align: center;
@@ -34,30 +28,56 @@ export const StyledHeader = styled.header`
     }
   }
 
-
-  input {
+  form {
     position: relative;
-    width: 350px;
-    max-width: 22.8rem;
-    height: 3.75rem;
-    border: 1px solid var(--gray3);
-    border-radius: 8px;
+    width: 351px;
+    margin: 0 auto;
+
+    input {
+      width: 100%;
+      width: 350px;
+      height: 3.75rem;
+      border: 1px solid var(--gray3);
+      border-radius: 8px;
+      padding-left: 1rem;
+      font-size: 1rem;
+      color: var(--gray2);
+    }
+
+    input::placeholder {
+      color: var(--gray3);
+      padding-left: 1rem;
+    }
+
+    button {
+      position: absolute;
+      width: 7rem;
+      height: 2.4rem;
+      top: 11px;
+      right: 10px;
+      border-radius: 8px;
+      background-color: var(--brand1);
+      color: #fff;
+      margin-bottom: 1rem;
+    }
   }
 
-  input::placeholder {
-    color: var(--gray3);
-    padding-left: 1rem;
-  }
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 
-  button {
-    position: absolute;
-    width: 7rem;
-    height: 2.4rem;
-    top: 84px;
-    right: 30px;
-    border-radius: 8px;
-    background-color: var(--brand1);
-    color: #fff;
-    margin-bottom: 1rem;
+    div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    form{
+      margin-right: 0;
+      align-self: center;
+    }
   }
 `;

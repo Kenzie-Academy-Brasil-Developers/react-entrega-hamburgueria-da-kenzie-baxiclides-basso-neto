@@ -16,10 +16,7 @@ function App() {
   );
   const [search, setSearch] = useState('')
 
-  const searchProducts = products.filter((product)=>{
-      return search === '' ? true : (product.name.toLowerCase()).includes(search.toLocaleLowerCase())
-  })
-
+  
   useEffect(() => {
     async function loadProductsData() {
       try {
@@ -34,14 +31,23 @@ function App() {
     }
     loadProductsData();
   }, []);
+  
+  const searchProducts = products.filter((product)=>{
+      return search === '' ? true : (product.name.toLowerCase()).includes(search.toLowerCase())
+  })
+
 
   useEffect(() => {
     localStorage.setItem("@PRODUCTSHAMBURGUERIA", JSON.stringify(cartProducts));
   }, [cartProducts]);
   
-  function addToCart(product) {
-    setCartProducts([...cartProducts, product]);
+  function addToCart(currentProduct) {
+    if(!cartProducts.some(product => product.id === currentProduct.id)){
+    setCartProducts([...cartProducts, currentProduct]);
     toast.success("Seu produto foi adicionado ao carrinho");
+  }else {
+    toast.error('Esse produto já foi adicionado no carrinho de compras')
+  }
   }
 
   function removeToCart(productId) {
@@ -54,11 +60,21 @@ function App() {
     
   }
 
-  // function total(products){
-  //     const cartTotal = cartProducts.reduce((previousValue, currentValue)=>{
-  //       return previousValue + currentValue.price
-  //     },0)
-  // }
+  function totalCart(products){
+      const cartTotal = products.reduce((previousValue, currentValue)=>{
+        return previousValue + currentValue.price
+      },0)
+
+      return cartTotal
+}
+const total = totalCart(cartProducts)
+
+function removeAllProducts(){
+  setCartProducts([])
+  toast.warning('Você removeu todos os produtos do carrinho')
+}
+
+  
 
   return (
     <div className="App">
@@ -68,16 +84,22 @@ function App() {
       ) : (
         <>
           <Header setSearch={setSearch} />
-          <ProductsList addToCart={addToCart} searchProducts={searchProducts} />
 
-          <Cart
-            addToCart={addToCart}
-            removeToCart={removeToCart}
-            products={products}
-            cartProducts={cartProducts}
-            setCartProducts={setCartProducts}
-          />
+          <div className="container">
+            <ProductsList addToCart={addToCart} searchProducts={searchProducts} />
+            <Cart
+              addToCart={addToCart}
+              removeToCart={removeToCart}
+              products={products}
+              cartProducts={cartProducts}
+              setCartProducts={setCartProducts}
+              total={total}
+              removeAllProducts={removeAllProducts}
+            
+            />
+    
         
+          </div>
         </>
       )}
       <ToastContainer

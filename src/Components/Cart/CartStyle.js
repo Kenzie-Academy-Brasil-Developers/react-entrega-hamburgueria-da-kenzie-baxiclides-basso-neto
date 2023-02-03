@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const StyledCart = styled.footer`
+  margin: 0.4rem auto;
+  width: 92%;
+
+  @media (min-width: 769px) {
+    width: 30%;
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -8,14 +15,14 @@ export const StyledCart = styled.footer`
 
   header {
     background-color: var(--brand1);
-    width: 90vw;
+    width: 100%;
     margin: 0 auto;
     height: 3.5rem;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     margin-top: 0.5rem;
 
-    h3{
+    h3 {
       color: #fff;
       margin-top: 1rem;
       margin-left: 1rem;
@@ -25,17 +32,31 @@ export const StyledCart = styled.footer`
   ul {
     margin: 0 auto;
     margin-top: 0.5rem;
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 200px;
+
     overflow-y: scroll;
-    border-bottom: 2px solid var(--gray3);
+
+    h3 {
+      border-top: 2px solid var(--gray3);
+
+      display: flex;
+      justify-content: space-between;
+      color: var(--gray1);
+      font-size: 0.9rem;
+
+      span {
+        color: var(--gray2);
+        font-size: 0.9rem;
+      }
+    }
   }
 
   li {
     display: flex;
-    width: 90vw;
+    justify-content: space-between;
+    width: 100%;
     margin: 0.5rem auto;
     margin-bottom: 1rem;
 
@@ -49,32 +70,39 @@ export const StyledCart = styled.footer`
     div {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 1rem;
-      gap: 0.5rem;
-      min-width: 130px;
+      gap: 5%;
 
       h3 {
-        color: var(--gray1);
+        color: var(--gray);
         font-size: 1.1rem;
       }
-      h4{
+      h4 {
         color: var(--brand1);
       }
 
-      h5{
+      h5 {
         color: var(--gray2);
         font-weight: 200;
       }
-
     }
-      button{
-        font-size: .75rem ;
-        align-self: flex-start;
-        margin-left: 50px;
-        background-color: var(--gray4);
+    button {
+      font-size: 0.75rem;
+      align-self: flex-start;
+
+      background-color: var(--gray4);
+    }
+
+    @media (min-width: 769px) {
+      div {
+        margin-left: 0px;
+        gap: 0px;
       }
+
+      button {
+        margin-top: 0.1rem;
+        margin-right: 0.1rem;
+      }
+    }
   }
 `;
 
@@ -83,13 +111,31 @@ export const StyledDivCartEmpty = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+
   margin-bottom: 2rem;
-  width: 90vw;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  background-color: var(--gray4);
 
   h4 {
     color: var(--gray2);
     margin-top: 0.5rem;
     font-weight: 300;
+  }
+`;
+
+export const StyledButton = styled.button`
+  background-color: var(--gray3);
+  color: var(--gray2);
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+  :hover {
+    background-color: #000;
+    color: #fff;
   }
 `;
