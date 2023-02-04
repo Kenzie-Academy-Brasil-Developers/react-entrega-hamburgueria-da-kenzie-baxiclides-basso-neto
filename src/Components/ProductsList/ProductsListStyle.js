@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledMain = styled.main`
   ul {
     display: flex;
-    gap: 10px;
     padding: 15px;
     overflow-x: scroll;
   }
@@ -57,6 +56,7 @@ export const StyledMain = styled.main`
     ul {
       flex-wrap: wrap;
       height: auto;
+      padding-left: 0;
     }
   }
 `;

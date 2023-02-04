@@ -25,7 +25,7 @@ export function Cart({ cartProducts, removeToCart, total, setCartProducts, remov
                   <div>
                     <h3>{product.name}</h3>
                     <h5>{product.category}</h5>
-                    <h4>R${product.price},00</h4>
+                    <h4>{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</h4>
                   </div>
                   <button onClick={() => removeToCart(product.id)
                     
@@ -35,7 +35,7 @@ export function Cart({ cartProducts, removeToCart, total, setCartProducts, remov
                 </li>
               ))}
               
-                <h3>Total:<span>R${total},00</span></h3>
+                <h3>Total:<span>{total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span></h3>
               
               <StyledButton onClick={()=>removeAllProducts()}>
               Remover Todos</StyledButton>

@@ -1,18 +1,3 @@
-/* body{
-  border: 15px solid black;
-} */
-
-/* #root{
-  border: 10px solid green;
-  width: 100;
-}
-
-.App {
-  border: 1px solid red;
-  width: 100%;
-  height: 100vh;
-} */
-
 .loadingMsg {
   display: flex;
   justify-content: center;
@@ -27,6 +12,7 @@
 @media (min-width: 769px) {
   .container {
     display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
   }
