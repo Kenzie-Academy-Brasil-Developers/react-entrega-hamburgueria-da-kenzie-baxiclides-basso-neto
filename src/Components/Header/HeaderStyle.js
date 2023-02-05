@@ -12,7 +12,7 @@ export const StyledHeader = styled.header`
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-}
+  }
 
   h1 {
     text-align: center;
@@ -69,13 +69,13 @@ export const StyledHeader = styled.header`
     align-items: center;
     padding: 10px;
 
-    div{
+    div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
 
-    form{
+    form {
       margin-right: 0;
       align-self: center;
     }
