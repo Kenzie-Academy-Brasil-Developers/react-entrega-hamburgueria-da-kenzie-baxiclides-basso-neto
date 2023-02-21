@@ -8,13 +8,11 @@
 <h1 align="center">Hamburgueria Da Kenzie - Baxiclides Basso Neto</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/baxiclides-basso-neto/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/baxiclides-basso-neto/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/baxiclides-basso-neto/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/baxiclides-basso-neto/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
+  <img alt="MIT LICENSE" src="https://img.shields.io/github/license/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto?color=56BEB8">
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
