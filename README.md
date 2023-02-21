@@ -48,7 +48,6 @@ The following tools were used in this project:
 - [Styled-components](https://styled-components.com/)
 - [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
-- [TypeScript](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements
 
@@ -58,7 +57,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/baxiclides-basso-neto/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto
+$ git clone https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto
 
 # Access
 $ cd react-entrega-hamburgueria-da-kenzie-baxiclides-basso-neto
