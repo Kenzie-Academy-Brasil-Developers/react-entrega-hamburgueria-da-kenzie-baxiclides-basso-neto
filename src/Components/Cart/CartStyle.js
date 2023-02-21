@@ -106,6 +106,10 @@ export const StyledCart = styled.footer`
       flex-direction: column;
       min-height: 100%;
 
+      header > h3 {
+        padding-top: 0;
+      }
+
       > ul {
         height: auto;
       }
