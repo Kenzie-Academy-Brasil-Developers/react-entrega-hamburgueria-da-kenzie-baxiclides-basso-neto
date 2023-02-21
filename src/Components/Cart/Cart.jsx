@@ -1,15 +1,6 @@
-import { useState } from "react";
 import { StyledButton, StyledCart, StyledDivCartEmpty } from "./CartStyle";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
-export function Cart({
-  cartProducts,
-  removeToCart,
-  total,
-  setCartProducts,
-  removeAllProducts,
-}) {
+export function Cart({ cartProducts, removeToCart, total, removeAllProducts }) {
   return (
     <StyledCart>
       <div>

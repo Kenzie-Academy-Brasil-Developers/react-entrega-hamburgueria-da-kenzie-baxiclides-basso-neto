@@ -23,4 +23,4 @@ export const GlobalStyle = createGlobalStyle`
         --gray4: #F5F5F5;
         
 }
-`
+`;

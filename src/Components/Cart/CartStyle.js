@@ -20,6 +20,8 @@ export const StyledCart = styled.footer`
         color: #fff;
         margin-top: 1rem;
         margin-left: 1rem;
+        padding-top: 1rem;
+        align-self: center;
       }
     }
 

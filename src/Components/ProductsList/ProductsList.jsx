@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { StyledMain } from "./ProductsListStyle";
 
 export function ProductsList({ searchProducts, addToCart }) {
